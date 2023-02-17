@@ -1,13 +1,20 @@
 // function to return license badge
-function licenseBadge(licence) {
-  if (licence !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${licence}-yellowgreen.svg)`;
+function licenseBadge(license) {
+  if (license !== "none") {
+    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
   }
   return "";
+  // if (license !== "MIT") {
+  //   return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+
+
+  // return "";
+  // }
+  
 }
 // function to return license link
-function licenceLink(licence) {
-  if (licence !== "none") {
+function licenseLink(license) {
+  if (license !== "none") {
     return `/n* [License](#license)/n`;
   }
   return "";
@@ -33,7 +40,7 @@ ${licenseBadge(data.licence)}
 * [Contact-Me](#contact-me)
 * [Contributers](#contributors)
 * [Testing](#test)
-${licenceLink(data.licence)}
+${licenseLink(data.licence)}
 ## Description
 ${data.descritption}
 ## Requirements
