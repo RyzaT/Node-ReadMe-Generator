@@ -87,7 +87,7 @@ const questions = [
 // }
 
 
-console.log(myOutputString);
+// console.log(myOutputString);
 
 // function to write README file
 function writeToFile(fileName, data) {

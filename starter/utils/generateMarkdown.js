@@ -3,19 +3,18 @@ function licenseBadge(license) {
   if (license !== "none") {
     return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
   }
-  return "";
-  // if (license !== "MIT") {
-  //   return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+  
+    else if (license !== "MIT") {
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
 
 
-  // return "";
-  // }
+  }
   
 }
 // function to return license link
 function licenseLink(license) {
   if (license !== "none") {
-    return `/n* [License](#license)/n`;
+    return `\n* [License](#license)\n`;
   }
   return "";
 }
@@ -33,6 +32,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 by ${data.name}
 ${licenseBadge(data.licence)}
+
 ## Table Of Contents
 * [Description](#description)
 * [Requirements](#require)
@@ -40,23 +40,30 @@ ${licenseBadge(data.licence)}
 * [Contact-Me](#contact-me)
 * [Contributers](#contributors)
 * [Testing](#test)
+';
+
 ${licenseLink(data.licence)}
+
 ## Description
 ${data.descritption}
+
 ## Requirements
 ${data.require}
+
 ## Usage
 ${data.usage}
+
 ## Contact-Me
 * Name - ${data.name}
 * Email - ${data.email}
 * GitHub - [${data.creator}](https://github.com/${data.creator}/)
+
 ## Contributors
 ${data.contributors}
+
 ## Testing
-\`\`\`
 ${data.test}
-\`\`\`
+
 ${licenseSection(data.licence)}
 `;
 }
