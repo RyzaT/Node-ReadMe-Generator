@@ -45,7 +45,7 @@ const questions = [
     {
         type: "input",
         name: "creator",
-        message: "What'your GitHub username?",
+        message: "What's your GitHub username?",
     },
     {
         type: "input",
@@ -81,7 +81,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating your README.md file...");
-        writeToFile("./starter/README.md", generateMarkdown({...responses}));
+        writeToFile("./README.md", generateMarkdown({...responses}));
     });
 }
 

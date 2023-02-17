@@ -21,7 +21,7 @@ function licenseSection(licence) {
   return "";
 }
 
-\// function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 by ${data.name}
