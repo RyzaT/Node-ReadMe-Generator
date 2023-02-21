@@ -27,6 +27,11 @@ const questions = [
         message: "Please write a short description of your project",
     },
     {
+        type: "input",
+        name: "screenshot",
+        message: "Please providea relative path if you wish to include a screenshot",
+    },
+    {
         type: "checkbox",
         name: "license",
         message: "Please select a licence applicable to this project",
