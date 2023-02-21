@@ -37,9 +37,6 @@ ${licenseBadge(data.licence)}
 * [Contributers](#contributors)
 * [Testing](#test)
 
-
-${licenseLink(data.licence)}
-
 ## Description
 ${data.descritption}
 ![alt-text](${data.screenshot})
@@ -61,6 +58,7 @@ ${data.contributors}
 ## Testing
 ${data.test}
 
+${licenseLink(data.licence)}
 ${licenseSection(data.licence)}
 `;
 }

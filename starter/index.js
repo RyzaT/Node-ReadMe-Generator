@@ -4,16 +4,6 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const { default: Choices } = require("inquirer/lib/objects/choices");
 
-// Title H1
-// Description
-// Table of Contents
-// Installation
-// Usage
-// License
-// Contributing
-// Tests
-// Questions
-
 // array of questions for user
 const questions = [
     {
@@ -76,23 +66,6 @@ const questions = [
 
 
 ];
-
-// License
-// const license = process.argv[2];
-
-// const myOutputString = `Hi. You're using my page. You have selected
-// to use this license: ${generateLicenseString(license)}. That's a good choice.`;
-
-// function generateLicenseString(input) {
-//     if (input !== undefined) {
-//         return `${input} (a mighty good license)`;
-//     } else {
-//         return "No license selected.";
-//     }
-// }
-
-
-// console.log(myOutputString);
 
 // function to write README file
 function writeToFile(fileName, data) {
