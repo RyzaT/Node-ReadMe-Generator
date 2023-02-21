@@ -2,7 +2,7 @@
 
   undefined
   
-##A README generator created on terminal by using Node.js
+A README generator created on terminal by using Node.js
 
 
 ## Table Of Contents
@@ -18,7 +18,7 @@
 A README generator created on terminal by using Node.js
 
 ## Screenshot
-![alt - text] <img src=(starter/utils/screenshot.png)/>
+![alt - text] <img src="(starter/utils/screenshot.png)"/>
 
 ## Requirements
 This application requires inquirer version 6.5.0 installed.
@@ -38,6 +38,7 @@ None at present.
 N/A
 
 ## License
+![alt - text]<img src="(https://img.shields.io/badge/license-MIT-brightgreen)"/>
   License used for this project - None
   * For more information on license types, please reference this website
 for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
