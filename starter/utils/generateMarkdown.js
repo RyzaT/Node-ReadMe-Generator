@@ -1,13 +1,10 @@
 // function to return license badge
 function licenseBadge(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
-  }
-  
-    else if (license !== "MIT") {
-    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-
-
+    if (license !== "none") {
+      return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    }
+    return "";
   }
   
 }
@@ -30,7 +27,6 @@ function licenseSection(licence) {
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-by ${data.name}
 ${licenseBadge(data.licence)}
 
 ## Table Of Contents
@@ -40,7 +36,7 @@ ${licenseBadge(data.licence)}
 * [Contact-Me](#contact-me)
 * [Contributers](#contributors)
 * [Testing](#test)
-';
+
 
 ${licenseLink(data.licence)}
 
