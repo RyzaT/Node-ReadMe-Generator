@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+const licenseBadge = require("./utils/licenseBadge");
 const { default: Choices } = require("inquirer/lib/objects/choices");
 
 // array of questions for user
@@ -22,10 +23,18 @@ const questions = [
         message: "Please providea relative path if you wish to include a screenshot",
     },
     {
-        type: "checkbox",
+        type: "list",
         name: "license",
-        message: "Please select a licence applicable to this project",
-        choices: ["MIT", "Apache 2.0", "Boost 1.0", "MPL 2.0", "BSD2", "BSD3", "None"],
+        message: "Please select the license you used for this project.",
+        choices: [
+          "GNU AGPLv3",
+          "GNU GPLv3",
+          "GNU LGPLv3",
+          "Mozilla",
+          "MIT",
+          "Apache",
+          "Boost",
+        ],
     },
     {
         type: "input",

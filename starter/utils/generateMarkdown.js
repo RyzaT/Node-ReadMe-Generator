@@ -1,33 +1,14 @@
-// function to return license badge
-function licenseBadge(license) {
-  if (license !== "none") {
-    if (license !== "none") {
-      return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-    }
-    return "";
-  }
-  
-}
-// function to return license link
-function licenseLink(license) {
-  if (license !== "none") {
-    return `\n* [License](#license)\n`;
-  }
-  return "";
-}
-// function to return the license section to readme
-function licenseSection(licence) {
-  if (licence !== "none") {
-    return `## License
-      Licensed under the ${licence} license.`;
-  }
-  return "";
-}
+
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-${licenseBadge(data.licence)}
+  return `
+# ${data.title}
+
+  ${data.licenseBadge}
+  
+  ${data.description}
+
 
 ## Table Of Contents
 * [Description](#description)
@@ -38,7 +19,9 @@ ${licenseBadge(data.licence)}
 * [Testing](#test)
 
 ## Description
-${data.descritption}
+${data.description}
+
+## Screenshot
 ![alt-text](${data.screenshot})
 
 ## Requirements
@@ -58,8 +41,10 @@ ${data.contributors}
 ## Testing
 ${data.test}
 
-${licenseLink(data.licence)}
-${licenseSection(data.licence)}
+## License
+  License used for this project - ${data.license}
+  * For more information on license types, please reference this website
+  for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 `;
 }
 

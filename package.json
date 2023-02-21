@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/RyzaT/Node-ReadMe-Generator/issues"
   },
-  "homepage": "https://github.com/RyzaT/Node-ReadMe-Generator#readme"
+  "homepage": "https://github.com/RyzaT/Node-ReadMe-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
 }
