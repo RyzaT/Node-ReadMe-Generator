@@ -34,16 +34,16 @@ switch (license) {
     break;
 
 };
-function licenseBadge(license) {
+function licenseBadges(license) {
   if (license !== "none") {
     return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return "";
-
+}
 
 return `## ${data.title}
 
-  ${data.licenseBadge.data.license}
+  ${data.licenseBadge}
   
 ##${data.description}
 
