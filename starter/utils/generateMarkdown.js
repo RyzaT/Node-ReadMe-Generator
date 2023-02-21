@@ -34,14 +34,18 @@ switch (license) {
     break;
 
 };
+function licenseBadge(license) {
+  if (license !== "none") {
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  }
+  return "";
+
 
 return `## ${data.title}
 
-# ${ data.title }
-
-  ${ data.licenseBadge }
+  ${data.licenseBadge.data.license}
   
-  ${ data.description }
+##${data.description}
 
 
 ## Table Of Contents
@@ -66,9 +70,9 @@ ${ data.require }
 ${ data.usage }
 
 ## Contact - Me
-  * Name - ${ data.name }
-* Email - ${ data.email }
-* GitHub - [${ data.creator }](https://github.com/${data.creator}/)
+* Name - ${data.name}
+* Email - ${data.email}
+* GitHub - [${data.creator}](https://github.com/${data.creator}/)
 
 ## Contributors
 ${ data.contributors }
