@@ -18,7 +18,7 @@ A README generator created on terminal by using Node.js
 A README generator created on terminal by using Node.js
 
 ## Screenshot
-![alt - text] <img src="(starter/utils/screenshot.png)"/>
+![alt - text](starter/utils/screenshot.png?raw=true)
 
 ## Requirements
 This application requires inquirer version 6.5.0 installed.
