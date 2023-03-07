@@ -3,7 +3,7 @@ function generateMarkdown(data) {
 
 // This function will determine badges based on license selection.
 let license = data.license;
-let licenseBadge = "";
+let licenseBadge = ("");
 switch (license) {
   case "Apache":
   licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
@@ -52,7 +52,7 @@ return `## ${data.title}
   * [Description](#description)
   * [Requirements](#require)
   * [Usage](#usage)
-  * [Questions & Contact - Me](#contact - me)
+  * [Contact - Me](#contact - me)
   * [Contributers](#contributors)
   * [Testing](#test)
 
