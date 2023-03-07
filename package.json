@@ -31,6 +31,7 @@
     "log-symbols": "^5.1.0",
     "mimic-fn": "^2.1.0",
     "mute-stream": "^0.0.8",
+    "node": "^19.6.1",
     "onetime": "^5.1.2",
     "ora": "^6.1.2",
     "os-tmpdir": "^1.0.2",
@@ -66,6 +67,5 @@
     "url": "https://github.com/RyzaT/Node-ReadMe-Generator/issues"
   },
   "homepage": "https://github.com/RyzaT/Node-ReadMe-Generator#readme",
-  "devDependencies": {},
   "description": ""
 }

@@ -52,7 +52,7 @@ return `## ${data.title}
   * [Description](#description)
   * [Requirements](#require)
   * [Usage](#usage)
-  * [Contact - Me](#contact - me)
+  * [Contact](#contact - me)
   * [Contributers](#contributors)
   * [Testing](#test)
 
@@ -69,7 +69,7 @@ ${ data.require }
 ## Usage
 ${ data.usage }
 
-## Contact - Me
+## Contact
 * Name - ${data.name}
 * Email - ${data.email}
 * GitHub - [${data.creator}](https://github.com/${data.creator}/)
