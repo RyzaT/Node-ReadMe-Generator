@@ -1,7 +1,6 @@
 {
-  "name": "node-readme-generator",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "ansi-escapes": "^6.0.0",
@@ -66,5 +65,7 @@
   "bugs": {
     "url": "https://github.com/RyzaT/Node-ReadMe-Generator/issues"
   },
-  "homepage": "https://github.com/RyzaT/Node-ReadMe-Generator#readme"
+  "homepage": "https://github.com/RyzaT/Node-ReadMe-Generator#readme",
+  "devDependencies": {},
+  "description": ""
 }

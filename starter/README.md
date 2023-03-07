@@ -1,8 +1,8 @@
-## Node README Generator
+## Team Profile Generator
 
   undefined
   
-A README generator created on terminal by using Node.js
+##This is a way to create a HTML with all your team members displayed and is made through Terminal
 
 
 ## Table Of Contents
@@ -15,16 +15,16 @@ A README generator created on terminal by using Node.js
 
 
 ## Description
-A README generator created on terminal by using Node.js
+This is a way to create a HTML with all your team members displayed and is made through Terminal
 
 ## Screenshot
-![alt - text](starter/utils/screenshot.png?raw=true)
+![alt - text] <img src=()/>
 
 ## Requirements
-This application requires inquirer version 6.5.0 installed.
+This application requires the inquirer and jest npm's
 
 ## Usage
-Markdown, es6, node.js and JavaScript.
+Node, JavaScript, Markdown and ES6 as well as some React.
 
 ## Contact - Me
 * Name - Ryan Taylor
@@ -32,14 +32,13 @@ Markdown, es6, node.js and JavaScript.
 * GitHub - [RyzaT](https://github.com/RyzaT/)
 
 ## Contributors
-None at present.
+I have used youtube, Mozilla Developer Network and W3 schools websites to help me with this project.
 
 ## Testing
-N/A
+A test folder is provided and runs trough jest.
 
 ## License
-![alt - text]<img src="(https://img.shields.io/badge/license-MIT-brightgreen)"/>
-  License used for this project - None
+  License used for this project - MIT
   * For more information on license types, please reference this website
 for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
   
