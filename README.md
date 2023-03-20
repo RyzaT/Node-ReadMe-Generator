@@ -18,7 +18,7 @@
 This program helps you build thge framework for your Readme through Node.
 
 ## Screenshot
-![alt - text] <img src=(starter/utils/screenshot.png)/>
+<img src="starter/utils/screenshot.png" alt="Alt text" title="screenshot" />
 
 ## Requirements
 This application requires Node.js as well as Inquirer to run.
