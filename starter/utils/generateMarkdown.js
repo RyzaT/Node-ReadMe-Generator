@@ -3,7 +3,7 @@ function generateMarkdown(data) {
 
 // This function will determine badges based on license selection.
 let license = data.license;
-let licenseBadge = (" ");
+let licenseBadge = ("");
 switch (license) {
   case "Apache":
   licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
@@ -34,19 +34,20 @@ switch (license) {
     break;
 
 };
-function licenseBadges(license) {
-  if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-  }
-  return " ";
-}
+// function license() {
+//   if (license !== "none") {
+//     return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+//   }
+//   return "";
+// }
 
 return `## ${data.title}
-
+<br>
   ${data.licenseBadge}
-  
+</br>
+<br>  
 ##${data.description}
-
+</br>
 
 ## Table Of Contents
   * [Description](#description)
